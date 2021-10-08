@@ -1,0 +1,51 @@
+name:                animations
+version:             0.1.0.0
+-- synopsis:
+-- description:
+homepage:
+license:             BSD3
+-- license-file:        LICENSE
+author:
+maintainer:
+copyright:
+category:
+build-type:          Simple
+cabal-version:       >=1.10
+extra-source-files:  README.md
+
+library
+  hs-source-dirs:     src
+  default-language:   Haskell2010
+  build-depends:      base >= 4.7 && < 5,
+                      reanimate >= 1.1.3.1,
+                      reanimate-svg,
+                      text,
+                      lens,
+                      linear
+  exposed-modules:    Fold.Scene
+                      Fold.Glyph
+                      Fold.Animation
+                      Zip.Scene
+                      Zip.Glyph
+                      Zip.Animation
+                      Functor.Tuple.Glyph
+                      Functor.Tuple.Scene
+                      Functor.Tuple.Animation
+                      Functor.Maybe.Glyph
+                      Functor.Maybe.Scene
+                      Functor.Maybe.Animation
+                      Functor.Common
+                      Common
+  ghc-options:        -Wall
+
+executable animations
+  hs-source-dirs:      app
+  main-is:             Main.hs
+  default-language:    Haskell2010
+  build-depends:       base >= 4.7 && < 5,
+                       reanimate >= 1.1.3.1,
+                       reanimate-svg,
+                       text,
+                       lens,
+                       linear,
+                       animations
