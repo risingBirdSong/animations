@@ -15,6 +15,9 @@ scaleFactor = 0.3
 classHeader' :: SVG
 classHeader' = center $ latex "class Functor f where"
 
+baseX :: Double
+baseX = boundingBox fmapSignature' ^. _1
+
 fmapSignature' :: SVG
 fmapSignature' = center $ latex "fmap :: (a $\\rightarrow$ b) $\\rightarrow$ f a $\\rightarrow$ f b"
 

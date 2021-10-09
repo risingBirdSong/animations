@@ -13,7 +13,6 @@ import Reanimate
     scale, splitGlyphs
   )
 import Reanimate.Svg (svgWidth, boundingBox)
-import Debug.Trace ()
 import Control.Lens ((^.), _1)
 
 bg :: SVG

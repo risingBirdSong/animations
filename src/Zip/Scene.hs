@@ -20,7 +20,7 @@ showSignature = do
   fullSignature <- oNew fullSig
   oShow fullSignature
   wait 1
-  moveTopLeft fullSignature 0.3
+  moveTopLeft 0.3 fullSignature
   return fullSignature
 
 showNumbers :: Scene s [Object s SVG]

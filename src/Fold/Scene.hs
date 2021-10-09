@@ -24,7 +24,7 @@ showFunction = do
   -- Show the signature object
   oShow sig
   -- Move signature to the top left corner
-  moveTopLeft sig 0.8
+  moveTopLeft 0.8 sig
 
   -- Create the object for the concreteFunction
   cf <- oNew concreteFunction

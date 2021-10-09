@@ -20,7 +20,7 @@ animation = env $
     oShowWith oFunctorClass oFadeIn
     wait 1
     -- Move the class to the top left corner
-    moveTopLeft oFunctorClass scaleFactor
+    moveTopLeft scaleFactor oFunctorClass
     wait 1
     -- Show the tuple argument
     objs <- mapM oNew lFmapTuple

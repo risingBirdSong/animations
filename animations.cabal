@@ -22,7 +22,11 @@ library
                       text,
                       lens,
                       linear
-  exposed-modules:    Fold.Scene
+  exposed-modules:    Applicative.Tuple.Glyph
+                      Applicative.Tuple.Scene
+                      Applicative.Tuple.Animation
+                      Applicative.Common
+                      Fold.Scene
                       Fold.Glyph
                       Fold.Animation
                       Zip.Scene
