@@ -69,3 +69,19 @@ executable zip
   build-depends:       base >= 4.7 && < 5,
                        reanimate >= 1.1.3.1,
                        animations
+
+executable functor-maybe
+  hs-source-dirs:      functor/maybe/
+  main-is:             Main.hs
+  default-language:    Haskell2010
+  build-depends:       base >= 4.7 && < 5,
+                       reanimate >= 1.1.3.1,
+                       animations
+
+executable functor-tuple
+  hs-source-dirs:      functor/tuple/
+  main-is:             Main.hs
+  default-language:    Haskell2010
+  build-depends:       base >= 4.7 && < 5,
+                       reanimate >= 1.1.3.1,
+                       animations
