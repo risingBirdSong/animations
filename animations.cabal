@@ -42,16 +42,12 @@ library
                       Common
   ghc-options:        -Wall
 
-executable animations
-  hs-source-dirs:      app
+executable applicative-tuple
+  hs-source-dirs:      applicative/tuple/
   main-is:             Main.hs
   default-language:    Haskell2010
   build-depends:       base >= 4.7 && < 5,
                        reanimate >= 1.1.3.1,
-                       reanimate-svg,
-                       text,
-                       lens,
-                       linear,
                        animations
 
 executable fold
