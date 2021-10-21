@@ -30,10 +30,3 @@ liftA2Signature :: SVG
 liftA2Signature =
   scale scaleFactor $
     center $ latex "liftA2 :: (a $\\rightarrow$ b $\\rightarrow$ c) $\\rightarrow$ f a $\\rightarrow$ f b $\\rightarrow$ f c"
-
-yCoordinates :: [SVG] -> [Double]
-yCoordinates classGlyphs =
-  let allHeights = svgHeight <$> classGlyphs
-      totalHeight = sum allHeights
-      initY = totalHeight / fromIntegral ( length classGlyphs * 2)
-   in foldr (\h acc -> acc ++ [last acc - h]) [initY] allHeights
